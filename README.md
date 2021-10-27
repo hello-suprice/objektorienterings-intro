@@ -107,14 +107,14 @@ Nedan finns ett antal uppgifter till klassen ovan. Det kan nog ta lite olika lå
 6. Skapa en ny metod inne i klassen, `set_color(self, new_color)`. Denna metod ska ändra på attributet `color`.
 7. För att kunna testa om `set_color(self, new_color)` så kan du direkt komma åt **attributet** `color` genom t ex `print(a_car.color)` (någonstans i huvudprogrammet) . Observera att du alltså skriver ut en variabel, och inte anropar en metod, på det sättet. Pröva detta!
 8. Skapa även metoden `set_mileage(self, new_mileage)`. Testa att den fungerar.
-9. Skapa ytterligare en metod, `get_mileage(self)`. Den metoden ska inte skriva ut miltalet, utan den ska istället **returnera** miltalet. Anropet kan ske genom `theMileage = a_car.getMileage()` (i huvudprogrammet). Därefter kan miltalet skrivas ut.
+9. Skapa ytterligare en metod, `get_mileage(self)`. Den metoden ska inte skriva ut miltalet, utan den ska istället **returnera** miltalet. Anropet kan ske genom `the_mileage = a_car.get_mileage()` (i huvudprogrammet). Därefter kan miltalet skrivas ut.
 10. Skapa objekten `c_car`, och `d_car` med lämpliga bilmärken, färger och miltal. Nu kan du lägga in alla dina bilar (fyra stycken bör det vara) i en lista, `my_cars`. [Här finns presentationen om listor](https://slides.com/nikodemus/listor/fullscreen?token=bPF0RWd0#/3).
 11. Loopa genom listan (se ovanstående presentation) för att skriva ut alla bilmodeller som finns i programmet.
 12. **Om du hinner**: Gör en meny som kan skriva ut listan med samtliga attribut sorterad i bokstavsordning / miltal / årsmodell eller färg, beroende på vilket menyval som görs.
 
 ## Fler övningar - En ny klass
 
-Skapa en klass `Player` där en spelare samlar poäng genom att "skjuta". Varje gång som spelare själv "skjuter" så kommer den också att bli beskjuten. Slumpen avgör såväl om spelaren träffar eller blir träffad. Om spelaren träffar så ökas poängen, men varje gång den blir träffad så minskar antalet liv med ett. Ett kodskelett för klassen med några metoder skulle kunna se ut så här (detta kodskelett finns i filen `pang-pang.py`):
+Skapa en klass `Player` där en spelare samlar poäng genom att "skjuta". Varje gång som spelare själv "skjuter" så kommer den också att bli beskjuten. Slumpen avgör såväl om spelaren träffar eller blir träffad. Om spelaren träffar så ökas poängen, men varje gång den blir träffad så minskar antalet liv med ett. Ett kodskelett för klassen med några metoder skulle kunna se ut enligt nedan (detta kodskelett finns även i filen `pang-pang.py`), använd din kreativitet för att implementera spelet!
 
 ```python
 class Player(object):
@@ -172,4 +172,4 @@ else:
 # att spelaren blir beskjuten.
 ```
 
-Programmet kan givetvis utvecklas med mer funktionalitet, fler spelare och egenskaper (t ex högre träffsäkerhet eller mindre risk att bli träffad) som vinns efter genomförda uppdrag.
+Programmet kan givetvis utvecklas med mer funktionalitet, fler spelare och egenskaper (t ex högre träffsäkerhet eller mindre risk att bli träffad) som erhålls efter genomförda uppdrag. Som sagt, använd din kreativitet!
