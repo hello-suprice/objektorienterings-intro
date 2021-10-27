@@ -117,7 +117,7 @@ Nedan finns ett antal uppgifter till klassen ovan. Det kan nog ta lite olika lå
 Skapa en klass `Player` där en spelare samlar poäng genom att "skjuta". Varje gång som spelare själv "skjuter" så kommer den också att bli beskjuten. Slumpen avgör såväl om spelaren träffar eller blir träffad. Om spelaren träffar så ökas poängen, men varje gång den blir träffad så minskar antalet liv med ett. Ett kodskelett för klassen med några metoder skulle kunna se ut enligt nedan (detta kodskelett finns även i filen `pang-pang.py`), använd din kreativitet för att implementera spelet!
 
 ```python
-class Player(object):
+class Player():
    def __init__(self, lifes):
       self.lifes = self.lifes
       self.scores = 0
