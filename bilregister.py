@@ -1,7 +1,8 @@
 class Car():
-    '''
-    En klass som håller reda på några egenskaper hos en bil.
-    '''
+    brand = str()
+    color = str()
+    mileage = int()
+
     # Metoden __init__, körs alltid då ett objekt skapas
 
     def __init__(self, brand, color, mileage):
@@ -12,10 +13,12 @@ class Car():
         self.mileage = mileage
 
     def get_brand(self):
-        '''
-        Skriver ut bilmärket
-        '''
-        print(self.brand)
+        print(f"Color: {self.color}")
+        
+        print(f"Brand: {self.brand}")
+
+        print(f"Mileage: {self.mileage}")
+       
 
     def set_brand(self, new_brand):
         '''
@@ -30,6 +33,12 @@ class Car():
 # Nu när klassen finns kan vi skapa objekt (variabler) med denna typ.
 # Dessa objekt har också tillgång till klassens metoder (funktioner).
 a_car = Car('Volvo', 'Blå', 1587)
-a_car.get_brand()
 a_car.set_brand('Renault')
-a_car.get_brand()
+b_car  = Car('BMW', 'Svart', 2020)
+c_car = Car('Mercedes', 'Vit', 2019)
+
+my_cars = [a_car, b_car, c_car]
+
+for cars in my_cars:
+    cars.get_brand()
+    print("....")
