@@ -8,14 +8,14 @@ class Player():
         input("Press any key to shoot!")
         if rand.uniform(0,1) >= 0.5:
             self.inc_scores()
-            print("You hit the sus!")
+            print("You hit the target!")
         else:
-            print("You missed the sus!")
+            print("You missed the target!")
         if rand.uniform(0,1) >= 0.5:
             self.reduce_lifes()
-            print("You got hit by the sus!")
+            print("You got hit by the target!")
         else:
-            print("The sus missed")
+            print("The target missed")
 
 
     def inc_scores(self):
